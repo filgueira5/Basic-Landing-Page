@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(0, 100%, 68%);
+    --Very-Dark-Blue: hsl(230, 29%, 20%);
+    --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+    --Grayish-Blue: hsl(231, 7%, 65%);
+    --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+
+body {
+    max-width: 1440;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Barlow", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    font-weight: 700;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li {
+    margin: 0px 20px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+}
+
+.gray__circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    color: rgb(0, 0, 0);
+}
+
+#login__btn {
+    color: var(--Grayish-Blue);
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: 180px;
+}
+
+.new {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.new p {
+    color: var(--Dark-Grayish-Blue);
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+span {
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    font-weight: bold;
+    border-radius: 999px;
+    padding: 3px 8px;
+}
+
+.right__content img {
+    max-width: 916px;
+    padding-right: -550px;
+}
+
+.title {
+    color: var(--Very-Dark-Blue);
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 36px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 42px;
+}
+
+.contact__area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Red);
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    width: 184px;
+    height: 49px;
+}
+
+.contact__area p {
+    color: var(--Dark-Grayish-Blue);
+    letter-spacing: 5px;
+    font-size: 15px;
+}
