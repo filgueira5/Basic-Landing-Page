@@ -13,12 +13,12 @@
 }
 
 body {
-    max-width: 1440;
     height: 100vh;
     padding-left: 10%;
     padding-right: 10%;
     font-family: "Barlow", sans-serif;
 }
+
 
 nav {
     display: flex;
@@ -35,6 +35,12 @@ nav {
     list-style: none;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.nav__links li:hover {
+    transition: 0.9s;
+    transform: scale(1.3);
 }
 
 li {
@@ -62,6 +68,7 @@ a {
 .main__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: "Barlow Condensed", sans-serif;
     margin-top: 180px;
 }
@@ -89,7 +96,6 @@ span {
 
 .right__content img {
     max-width: 916px;
-    padding-right: -550px;
 }
 
 .title {
@@ -120,10 +126,36 @@ button {
     font-size: 15px;
     width: 184px;
     height: 49px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.9s;
+    transform:scale(1.1)
 }
 
 .contact__area p {
     color: var(--Dark-Grayish-Blue);
     letter-spacing: 5px;
     font-size: 15px;
+}
+
+@media (max-width: 1440px)
+{
+    .all__content {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .right__content img {
+        max-width: 916px;
+        margin-right: -410px;
+    }    
+    .subtitle {
+        font-size: 22px;
+        max-width: 280px;
+        color: var(--Dark-Grayish-Blue);
+        margin-bottom: 42px;
+    }
+    
 }
